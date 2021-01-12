@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as dashboard from "./dashboard";
+import './index.css';
+
 import { NotFoundPage } from "./common/components";
 
 function App() {
