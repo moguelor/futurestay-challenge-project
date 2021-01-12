@@ -1,80 +1,80 @@
 @font-face {
   font-family: "Alleyn";
   font-weight: 200;
-  src: local("Alleyn"), url(./fonts/Alleyn-Light.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Light.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 200;
-  src: local("Alleyn"), url(./fonts/Alleyn-Light-Italic.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Light-Italic.otf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 300;
-  src: local("Alleyn"), url(./fonts/Alleyn-Book.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Book.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 300;
-  src: local("Alleyn"), url(./fonts/Alleyn-Book-Italic.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Book-Italic.otf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 400;
-  src: local("Alleyn"), url(./fonts/Alleyn-Regular.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Regular.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 400;
   src: local("Alleyn"),
-    url(./fonts/Alleyn-Regular-Italic.otf) format("truetype");
+    url(./common/resources/fonts/Alleyn-Regular-Italic.otf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 500;
-  src: local("Alleyn"), url(./fonts/Alleyn-Medium.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Medium.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 500;
-  src: local("Alleyn"), url(./fonts/Alleyn-Medium-Italic.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Medium-Italic.otf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 600;
-  src: local("Alleyn"), url(./fonts/Alleyn-Semibold.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Semibold.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 600;
   src: local("Alleyn"),
-    url(./fonts/Alleyn-Semibold-Italic.otf) format("truetype");
+    url(./common/resources/fonts/Alleyn-Semibold-Italic.otf) format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 700;
-  src: local("Alleyn"), url(./fonts/Alleyn-Bold.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Bold.otf) format("truetype");
 }
 
 @font-face {
   font-family: "Alleyn";
   font-weight: 700;
-  src: local("Alleyn"), url(./fonts/Alleyn-Bold-Italic.otf) format("truetype");
+  src: local("Alleyn"), url(./common/resources/fonts/Alleyn-Bold-Italic.otf) format("truetype");
   font-style: italic;
 }
 
