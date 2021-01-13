@@ -14,7 +14,7 @@ const CustomLink = styled(Link)`
   align-items: center;
   font-weight: 400;
   font-size: 12px;
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
   height: 100%;
   padding: 3px 12px;

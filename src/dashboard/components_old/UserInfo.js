@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as BellIcon } from "../../common/resources/icons/bell-icon.svg";
 import styled from "styled-components";
+import DropdownUser from "./DropdownUser"
 
 const Container = styled.div`
     display: flex;
@@ -28,7 +29,7 @@ const UserInfo = () => {
       <span>
         <BellIcon />
       </span>
-      Another things
+      <DropdownUser />
     </Container>
   );
 };
