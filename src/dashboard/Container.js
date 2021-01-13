@@ -6,6 +6,7 @@ import {
   Button,
   ChannelList,
   InfoCard,
+  Activity
 } from "./components";
 import { ReactComponent as DoneMarkLogo } from "../common/resources/logos/donemark-logo.svg";
 import { ReactComponent as ThunderIcon } from "../common/resources/icons/thunder.svg";
@@ -75,7 +76,7 @@ const Dashboard = () => {
                       </Col>
                     </Row>
                   </Col>
-                  <Col lg="6">Activity</Col>
+                  <Col lg="6"><Activity  /></Col>
                 </Row>
               </Col>
             </Row>

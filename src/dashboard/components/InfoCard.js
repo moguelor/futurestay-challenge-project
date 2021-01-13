@@ -59,7 +59,8 @@ const Amount = styled.div`
   @media (min-width: 576px) {
     font-size: 36px;
     display: flex;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-weight: 500;
   }
 `;
 
