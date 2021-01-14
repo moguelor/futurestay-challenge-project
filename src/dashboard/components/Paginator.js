@@ -9,6 +9,7 @@ const ItemPage = styled.div`
   color: #9a9ba9;
   font-weight: 500;
   margin-right: 20px;
+  cursor: pointer;
 
   ${({ active }) =>
     active &&

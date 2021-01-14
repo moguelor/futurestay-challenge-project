@@ -1,16 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import styled from "styled-components";
 import {
   Title,
   WelcomeCard,
   Button,
   ChannelList,
   InfoCard,
-  Activity
+  Activity,
+  Schedule
 } from "./components";
 import { ReactComponent as DoneMarkLogo } from "../common/resources/logos/donemark-logo.svg";
 import { ReactComponent as ThunderIcon } from "../common/resources/icons/thunder.svg";
 import { ReactComponent as PlusCircleIcon } from "../common/resources/icons/plus-circle.svg";
+
 
 const Dashboard = () => {
   return (
@@ -52,7 +55,7 @@ const Dashboard = () => {
                     <ChannelList />
                   </Col>
                 </Row>
-                <Row lg="12" style={{marginTop: 15}}>
+                <Row lg="12" style={{ marginTop: 15 }}>
                   <Col lg="6">
                     <Row>
                       <Col xs="6" lg="12">
@@ -76,12 +79,14 @@ const Dashboard = () => {
                       </Col>
                     </Row>
                   </Col>
-                  <Col lg="6"><Activity  /></Col>
+                  <Col lg="6">
+                    <Activity />
+                  </Col>
                 </Row>
               </Col>
             </Row>
           </Col>
-          <Col lg="4">
+          <Col lg="4" style={{marginTop: 10}}>
             <Row>
               <Col xs="6" lg="6" className="d-none d-sm-block">
                 <Button
@@ -99,18 +104,7 @@ const Dashboard = () => {
                 />
               </Col>
             </Row>
-            <Row>
-              <Col>
-                <Row>
-                  <Col>Schedule</Col>
-                  <Col>Dropdown</Col>
-                </Row>
-                <Row>
-                  <Col lg="12">Card 1</Col>
-                  <Col lg="12">Card 2</Col>
-                </Row>
-              </Col>
-            </Row>
+            <Schedule />
           </Col>
         </Row>
       </Container>

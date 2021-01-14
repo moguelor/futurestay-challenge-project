@@ -35,6 +35,8 @@ const ContainerItems = styled(Row)`
     .target div + .hd-mobile {
       display: flex;
     }
+
+    padding-bottom: 100px;
   }
 `;
 
