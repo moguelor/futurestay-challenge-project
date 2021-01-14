@@ -31,6 +31,9 @@ const Title = styled.div`
   color: #fff;
   font-weight: 600;
   font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 `;
 
 const Subtitle = styled.div`
@@ -38,6 +41,9 @@ const Subtitle = styled.div`
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 `;
 
 const Wrapper = styled.div`
@@ -71,7 +77,7 @@ const WelcomeCard = ({ title }) => {
             celebrate!
           </Subtitle>
           <Row>
-            <Col xs={8} sm={7} md={5} lg={5}>
+            <Col xs={9} sm={7} md={5} lg={5}>
               <Button text={"Check business performance"} />
             </Col>
           </Row>

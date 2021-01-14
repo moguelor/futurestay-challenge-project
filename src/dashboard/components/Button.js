@@ -9,6 +9,10 @@ const StyledButton = styled.button`
   border: none;
   font-size: 12px;
   color: #2a2c37;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
 
   svg {
     margin-right: 6px;
@@ -21,7 +25,8 @@ const StyledButton = styled.button`
         min-height: 24px;
         border-radius: 100px;
         margin-top: 20px; 
-        padding: 4px 0px;
+        padding: 4px 8px;
+        width: normal;
     `}
 
   ${({ type }) =>

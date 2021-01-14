@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import styled from "styled-components";
 import {
   Title,
   WelcomeCard,
@@ -57,7 +56,7 @@ const Dashboard = () => {
                 </Row>
                 <Row lg="12" style={{ marginTop: 15 }}>
                   <Col lg="6">
-                    <Row>
+                    <Row className="row-eq-height">
                       <Col xs="6" lg="12">
                         <InfoCard
                           text="Bookings"
