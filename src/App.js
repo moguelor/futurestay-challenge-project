@@ -12,7 +12,7 @@ const themes = {
   default: {
     colors: {
       background: "#FAFAFA",
-      backgroundMenu: "#FFF",
+      surface: "#FFF",
       text: "#2A2C37",
       textMenu: "#55586F",
       textMenuActive: "#4852aa",

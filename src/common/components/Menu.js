@@ -16,9 +16,20 @@ const StyledUL = styled.ul`
   display: flex;
   list-style: none;
   margin: 0px;
+
+  ${({variant}) => variant === 'mobile' && `
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 15px;
+    & > li {
+      font-size: 15px;
+      margin: 5px 0px;
+    }
+  `}
+
 `;
 
-const Menu = ({ location }) => {
+const Menu = ({ location, variant }) => {
   const items = [
     {
       icon: HomeIcon,
@@ -63,7 +74,7 @@ const Menu = ({ location }) => {
   ];
 
   return (
-    <StyledUL>
+    <StyledUL variant={variant}>
       {items.map((item, index) => (
         <MenuItem key={index} {...item} isActive={location.pathname === item.path} />
       ))}

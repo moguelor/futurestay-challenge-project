@@ -1,11 +1,18 @@
-import React from "react";
-import { NavBar } from "@components";
+import React, { useState } from "react";
+import { NavBar, MenuMobile } from "@components";
 
 const AdminLayout = ({ children }) => {
-  return <div>
-      <NavBar />
-      {children}
-    </div>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <NavBar handleClickOpen={() => setIsOpen(true)} />
+      <section>
+        <MenuMobile isOpen={isOpen}  handleClickClose={() => setIsOpen(false)} />
+        <section>{children}</section>
+      </section>
+    </div>
+  );
 };
 
 export default AdminLayout;
