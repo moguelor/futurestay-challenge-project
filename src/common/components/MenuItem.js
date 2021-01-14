@@ -22,12 +22,12 @@ const StyledLink = styled(Link)`
     `
       color: ${theme.colors.textMenuActive};
       background-color: ${theme.colors.backgroundMenuActive};
+      font-weight: 500;
     `}
 
-  
-    &:hover {
-      color: ${({ theme }) => theme.colors.textMenuActive};
-    }
+  &:hover {
+    color: ${({ theme }) => theme.colors.textMenuActive};
+  }
 `;
 
 const Label = styled.span`

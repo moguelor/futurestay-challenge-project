@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-import Menu from './Menu';
+import Menu from "./Menu";
+import DropdownUser from "./DropdownUser";
 
 import { ReactComponent as BurgerIcon } from "@assets/menuIcons/burger.svg";
 import { ReactComponent as DoneMarkLogo } from "@assets/logos/donemark-logo.svg";
 import { ReactComponent as MenuHeaderLogo } from "@assets/logos/menu-header-logo.svg";
+import { ReactComponent as NotificationIcon } from "@assets/icons/notification.svg";
 
 const StyledContainer = styled(Container)`
   background-color: ${({ theme }) => theme.colors.backgroundMenu};
@@ -16,6 +18,11 @@ const StyledContainer = styled(Container)`
   z-index: 1;
 `;
 
+const StyledMenuHeaderLogo = styled(MenuHeaderLogo)`
+  top: -25px;
+  position: absolute;
+`;
+
 const NavBar = () => {
   return (
     <StyledContainer fluid>
@@ -23,14 +30,20 @@ const NavBar = () => {
         <Col xs={6} className="d-block d-xl-none">
           <BurgerIcon />
         </Col>
-        <Col xs={1} className="d-none d-xl-block no-padding-left">
-            <MenuHeaderLogo />
+        <Col xs={1} className="d-none d-xl-flex no-padding-left">
+          <StyledMenuHeaderLogo />
         </Col>
-        <Col className="d-none d-xl-block no-padding-left">
-            <Menu />
+        <Col className="d-none d-xl-flex">
+          <Menu />
         </Col>
-        <Col xs={6} className="d-block d-xl-none text-right">
+        <Col className="d-none d-xl-flex align-items-center justify-content-end">
+          <NotificationIcon />
+        </Col>
+        <Col xs={6} lg className="d-block d-xl-none text-right">
           <DoneMarkLogo />
+        </Col>
+        <Col xs={1}  className="d-none d-xl-flex align-items-center justify-content-end">
+          <DropdownUser />
         </Col>
       </Row>
     </StyledContainer>

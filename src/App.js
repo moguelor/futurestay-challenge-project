@@ -13,9 +13,11 @@ const themes = {
     colors: {
       background: "#FAFAFA",
       backgroundMenu: "#FFF",
+      text: "#2A2C37",
       textMenu: "#55586F",
       textMenuActive: "#4852aa",
       backgroundMenuActive: "#edeef7",
+
     },
   },
   dark: {

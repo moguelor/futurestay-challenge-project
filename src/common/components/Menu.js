@@ -15,6 +15,7 @@ import { ReactComponent as WebsiteIcon } from "@assets/menuIcons/website.svg";
 const StyledUL = styled.ul`
   display: flex;
   list-style: none;
+  margin: 0px;
 `;
 
 const Menu = ({ location }) => {
