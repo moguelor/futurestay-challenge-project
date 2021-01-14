@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as BellIcon } from "../../common/resources/icons/bell-icon.svg";
 import styled from "styled-components";
 import DropdownUser from "./DropdownUser"
 
@@ -27,7 +26,6 @@ const UserInfo = () => {
   return (
     <Container>
       <span>
-        <BellIcon />
       </span>
       <DropdownUser />
     </Container>

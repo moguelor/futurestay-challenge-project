@@ -8,7 +8,6 @@ const StyledDiv = styled.div`
   min-height: 58px;
   border-radius: 20px;
   padding: 5px 15px;
-  height: 100%;
 
   .average-wrapper {
     text-align: right;

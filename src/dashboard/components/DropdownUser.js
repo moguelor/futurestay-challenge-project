@@ -19,15 +19,23 @@ const CustomDropdown = styled(Dropdown)`
     }
 
     dropdown-men
+`;
 
-
+const Round = styled.span`
+    width: 22px;
+    height: 22px;
+    background-color: #4852AA;
+    font-size: 12px;
+    border-radius: 22px;
+    color: #FFF;
 `;
 
 const DropdownUser = ({name}) => {
   return (
     <CustomDropdown>
+      
       <Dropdown.Toggle>
-        Hi, {name}
+        <Round> SJ </Round>Hi, {name}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>

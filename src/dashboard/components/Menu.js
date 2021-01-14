@@ -12,16 +12,44 @@ import { ReactComponent as FinancialsIcon } from "../../common/resources/menuIco
 import { ReactComponent as WebsiteIcon } from "../../common/resources/menuIcons/website.svg";
 
 const StyledUL = styled.ul`
-  display: flex;
+
+display: flex;
+list-style: none;
+padding: 0px;
+height: 100%;
+
+
+${({type}) => type === 'desktop' && `
   flex-direction: row;
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
   align-items: center;
+  margin-top: -5px;
+`}
+
+${({type}) => type === 'mobile' && `
+  flex-direction: column;
+  margin: 15px;
+  
+  & > li {
+    width: 100%;
+  }
+
+  & > li > a {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  } 
+`}
+
+
 `;
 
-const Menu = ({ location }) => {
+const Menu = ({ location, type="desktop" }) => {
 
     const menuItems = [
     {
@@ -67,7 +95,7 @@ const Menu = ({ location }) => {
   ];
 
   return (
-    <StyledUL>
+    <StyledUL type={type}>
       {menuItems.map(({ icon, label, path }, index) => (
         <MenuItem
           key={index}

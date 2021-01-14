@@ -26,7 +26,7 @@ const StyledButton = styled.button`
         border-radius: 100px;
         margin-top: 20px; 
         padding: 4px 8px;
-        width: normal;
+        width: auto;
     `}
 
   ${({ type }) =>

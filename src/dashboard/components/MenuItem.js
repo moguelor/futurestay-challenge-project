@@ -26,13 +26,11 @@ const CustomLink = styled(Link)`
     border-radius: 18px;
 
     span {
-        // TODO font-weight: 500;
       color: #4852aa;
     }
   }
 
   &:hover {
-    // TODO font-weight: 500;
     color: #4852aa;
   }
 

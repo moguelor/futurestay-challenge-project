@@ -8,7 +8,7 @@ const StyledH1 = styled.h1`
     font-size: 22px;
     color: #2A2C37;
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 15px;
 
     svg { 
         width: 18px;

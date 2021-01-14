@@ -5,8 +5,12 @@ import Menu from "./Menu";
 import UserInfo from "./UserInfo";
 
 const StyledNavBar = styled.nav`
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   height: 50px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255, .9);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
