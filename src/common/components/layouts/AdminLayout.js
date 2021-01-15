@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavBar, MenuMobile, ToggleTheme } from "@components";
+import { NavBar, MenuMobile, ToggleTheme, ToggleButton } from "@components";
 import styled from "styled-components";
 
 const WrapperContent = styled.section`
