@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import coffeeImage from "@assets/character/coffee.png";
 
-const StyledDiv = styled.div`
-  padding: 25px;
+const StyledRow = styled(Row)`
   font-size: 15px;
   font-weight: 600;
   font-style: italic;
@@ -27,16 +26,14 @@ const StyledDiv = styled.div`
 
 const CommingSoonPage = () => {
   return (
-    <Row className="justify-content-center align-items-center">
+    <Container className="justify-content-center align-items-center">
       <Col xs={12}>
-        <StyledDiv>
-          <Row className="justify-content-center align-items-center h-100">
+          <StyledRow className="justify-content-center align-items-center h-100">
             <Col xs={12} className="text-center" ><img src={coffeeImage}/></Col>
             <Col xs={12} className="text-center">Take a break!<br /> This page is in construction...</Col>
-          </Row>
-        </StyledDiv>
+          </StyledRow>
       </Col>
-    </Row>
+    </Container>
   );
 };
 
