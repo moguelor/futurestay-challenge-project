@@ -34,6 +34,8 @@ const Label = styled.label`
 
 const ContainerLogo = styled.div`
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   ${({ checked }) => !checked && "opacity: .3; font-weight: 500;"}
 

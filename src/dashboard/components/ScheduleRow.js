@@ -21,9 +21,18 @@ const Label = styled.div`
   font-size: 12px;
   color: ${({ theme }) => theme.colors.text};
   font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   svg > path {
     fill: ${({ theme }) => theme.colors.text};
+  }
+
+  @media(min-width: 576px) {
+    white-space: initial;
+    text-overflow: auto;
+    overflow: auto;
   }
 `;
 
@@ -31,6 +40,10 @@ const LabelGrey = styled.div`
   font-size: 12px;
   color: ${({ theme }) => theme.colors.colorTextCompany};
   font-weight: 400;
+  white-space: nowrap;
+
+
+
 `;
 
 const getIconByType = (type) => {

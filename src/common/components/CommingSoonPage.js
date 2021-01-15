@@ -6,7 +6,7 @@ import coffeeImage from "@assets/character/coffee.png";
 const StyledDiv = styled.div`
   padding: 25px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
   border-radius: 20px;
   color: ${({theme}) => theme.colors.text};
@@ -14,6 +14,14 @@ const StyledDiv = styled.div`
   img {
     width: 250px;
     margin-bottom: 15px;
+  }
+
+  @media (min-width: 576px){
+    img {
+      width: 300px;
+      margin-bottom: 15px;
+    }
+    font-size: 25px;
   }
 `;
 
@@ -24,7 +32,7 @@ const CommingSoonPage = () => {
         <StyledDiv>
           <Row className="justify-content-center align-items-center h-100">
             <Col xs={12} className="text-center" ><img src={coffeeImage}/></Col>
-            <Col xs={12} className="text-center">Take a break! This page is in construction...</Col>
+            <Col xs={12} className="text-center">Take a break!<br /> This page is in construction...</Col>
           </Row>
         </StyledDiv>
       </Col>
