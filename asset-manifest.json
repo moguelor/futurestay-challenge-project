@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/futurestay-challenge-project/static/css/main.77c72f33.chunk.css",
-    "main.js": "/futurestay-challenge-project/static/js/main.dbfb9c2f.chunk.js",
-    "main.js.map": "/futurestay-challenge-project/static/js/main.dbfb9c2f.chunk.js.map",
+    "main.js": "/futurestay-challenge-project/static/js/main.be0c1231.chunk.js",
+    "main.js.map": "/futurestay-challenge-project/static/js/main.be0c1231.chunk.js.map",
     "runtime-main.js": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js",
     "runtime-main.js.map": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js.map",
     "static/css/2.1a02f21c.chunk.css": "/futurestay-challenge-project/static/css/2.1a02f21c.chunk.css",
@@ -36,6 +36,7 @@
     "static/media/rateboard.16533752.svg": "/futurestay-challenge-project/static/media/rateboard.16533752.svg",
     "static/media/reservations.d2de5950.svg": "/futurestay-challenge-project/static/media/reservations.d2de5950.svg",
     "static/media/right-circle.939857d4.svg": "/futurestay-challenge-project/static/media/right-circle.939857d4.svg",
+    "static/media/theme-light-dark.8b770d92.svg": "/futurestay-challenge-project/static/media/theme-light-dark.8b770d92.svg",
     "static/media/thunder.bf30b710.svg": "/futurestay-challenge-project/static/media/thunder.bf30b710.svg",
     "static/media/up-green.0b368d12.svg": "/futurestay-challenge-project/static/media/up-green.0b368d12.svg",
     "static/media/vrbo.82a9b979.svg": "/futurestay-challenge-project/static/media/vrbo.82a9b979.svg",
@@ -47,6 +48,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.2f0ba063.chunk.js",
     "static/css/main.77c72f33.chunk.css",
-    "static/js/main.dbfb9c2f.chunk.js"
+    "static/js/main.be0c1231.chunk.js"
   ]
 }
