@@ -13,6 +13,7 @@ const themes = {
   default: {
     colors: {
       background: "#fafafa",
+      backgroundMobile: "#fff",
       card: "#FFF",
       surface: "#fff",
       text: "#2a2c37",
@@ -28,6 +29,7 @@ const themes = {
   dark: {
     colors: {
       background: "#55586f",
+      backgroundMobile: "#55586f",
       card: "#79798c",
       surface: "#2a2c37",
       text: "#fff",
@@ -36,7 +38,7 @@ const themes = {
       colorTextCompany: "#fff",
       textMenuActive: "#4852aa",
       backgroundMenuActive: "#9a9ba9",
-      backgroundToggle: "#DDDEE2",
+      backgroundToggle: "#dddee2",
       backgroundLongCard: "#bcbcc5",
     },
   },

@@ -27,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
     .no-poadding-right {
         padding-right:0;
     }
+
+    @media(max-width: 576px) {
+        body {
+            background-color:  ${({ theme }) => theme.colors.backgroundMobile};
+        }
+    }
 `;
 
 export default GlobalStyle;
