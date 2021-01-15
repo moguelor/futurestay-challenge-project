@@ -1,12 +1,12 @@
-## Challenge Project for the startup Futurestay. https://moguelor.github.io/futurestay-challenge-project/#/
+### Challenge Project for the startup Futurestay. https://moguelor.github.io/futurestay-challenge-project/#/
 
 Challenge project created to show the knowledge acquired as UI Developer in frontend technologies like `react.js`.
 
-## Started Kit
+### Started Kit
 
 The initial structure is created by [create-react-app](https://create-react-app.dev/), the setup for a modern web app.
 
-## Installation
+### Installation
 
 Application requires [Node.js](https://nodejs.org/es/) to run.
 
@@ -21,7 +21,7 @@ yarn start
 
 > Note | The project is running on port `3000`.
 
-## Structure Folder
+### Structure Folder
 
 For the folder organization, is used the metodology `structure by features`. I believe that is a easy way to manage the scalability of big project. You can split one big application into the smallest ones `divide and conquer`.
 
@@ -42,30 +42,30 @@ For the folder organization, is used the metodology `structure by features`. I b
     |-- index.js            # Application entry point.
 ```
 
-## Libraries
+### Libraries
 
 Here are the main libraries used in the project.
 
-### UI
+#### UI
 
-* [react](https://es.reactjs.org/) - `Modern web library to use in the UI.`
+* [react](https://es.reactjs.org/) - Modern web library to use in the UI.
 
-### CSS
+#### CSS
 
-* [styled-components](https://styled-components.com/) - `Use the best bits of ES6 and CSS to style your apps without stress.`
-* [react-bootstrap](https://react-bootstrap.netlify.app/) - `The most popular front-end framework Rebuilt for React.`
+* [styled-components](https://styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress.
+* [react-bootstrap](https://react-bootstrap.netlify.app/) - The most popular front-end framework Rebuilt for React.
 
 ### Routing
 
-* [react-router](https://reactrouter.com/) - `Declarative routing for react.js.`
+* [react-router](https://reactrouter.com/) - Declarative routing for react.js.
 
-### Configuration
+#### Configuration
 
-* [@craco/craco](https://github.com/gsoft-inc/craco) - `Easy and comprehensible configuration layer for create-react-app.`
+* [@craco/craco](https://github.com/gsoft-inc/craco) - Easy and comprehensible configuration layer for create-react-app.
 
-### Deploy
+#### Deploy
 
-* [gh-pages](https://github.com/tschaub/gh-pages) - `Publish files to a gh-pages branch on GitHub.`
+* [gh-pages](https://github.com/tschaub/gh-pages) - Publish files to a gh-pages branch on GitHub.
 
 ### Required feature.
 
@@ -81,7 +81,7 @@ Here are the main libraries used in the project.
 
   > Note | If your computer or your browser has a dark theme configured, the hook will recognize and will show the application in the dark mode.
 
-## [TODO]
+### [TODO]
 
 * Migrate code to [Typescript](https://www.typescriptlang.org/).
 * Add unit testings with [Jest](https://jestjs.io/)
