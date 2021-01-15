@@ -29,7 +29,7 @@ const Label = styled.div`
 
 const LabelGrey = styled.div`
   font-size: 12px;
-  color: #79798c;
+  color: ${({theme}) => theme.colors.colorTextCompany};
   font-weight: 400;
 `;
 

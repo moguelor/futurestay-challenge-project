@@ -73,7 +73,7 @@ const Menu = ({ location, variant }) => {
       path: "/website",
     },
   ];
-
+  console.log(location.pathname)
   return (
     <StyledUL variant={variant}>
       {items.map((item, index) => (

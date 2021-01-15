@@ -17,8 +17,8 @@ const StyledLink = styled(Link)`
   border-radius: 18px;
   text-decoration: none !important;
 
-  ${({ isActive, theme }) =>
-    isActive &&
+  ${({ $isActive, theme }) =>
+  $isActive &&
     `
       color: ${theme.colors.textMenuActive};
       background-color: ${theme.colors.backgroundMenuActive};
@@ -30,7 +30,7 @@ const StyledLink = styled(Link)`
   }
 
   & > svg > path {
-    fill: ${({ theme }) => theme.colors.textMenu}
+    fill: ${({ theme }) => theme.colors.textMenu};
   }
 `;
 
@@ -39,6 +39,7 @@ const Label = styled.span`
 `;
 
 const MenuItem = ({ icon: Icon, text, path, isActive }) => {
+
   return (
     <StyledLI>
       <StyledLink to={path} $isActive={isActive}>

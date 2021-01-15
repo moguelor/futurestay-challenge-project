@@ -76,7 +76,7 @@ const ChannelList = () => {
     <Wrapper>
       <Row>
         {channels.map(({ logo: Logo, name, checked }, index) => (
-          <Col key={index} xs={6} lg>
+          <Col key={index} xs={6}  lg>
             <Row className="justify-content-center">
               <Col xs={9} lg={12}>
                 <ContainerLogo checked={checked}>

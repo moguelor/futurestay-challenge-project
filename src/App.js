@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { HashRouter as Router, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { LayoutRoute } from "@hocs";
 import { useThemeMode } from "@hooks";
@@ -20,8 +20,8 @@ const themes = {
       backgroundMenuActive: "#edeef7",
       backgroundToggle: "#4852AA",
       textMark: "#9A9BA9",
-      backgroundLongCard: "#edeef7"
-
+      backgroundLongCard: "#edeef7",
+      colorTextCompany: "#79798c"
     },
   },
   dark: {
@@ -35,13 +35,13 @@ const themes = {
       backgroundMenuActive: "#9A9BA9",
       backgroundToggle: "#4852AA",
       textMark: "#FFF",
-      backgroundLongCard: "#BCBCC5"
+      backgroundLongCard: "#BCBCC5",
+      colorTextCompany: "#FFF"
     },
   },
 };
 
 const App = () => {
-
   const [theme, toggleTheme] = useThemeMode();
 
   return (
@@ -49,6 +49,13 @@ const App = () => {
       <GlobalStyle />
       <Router>
         <Switch>
+          <LayoutRoute
+            exact
+            path="/"
+            component={dashboard.Container}
+            layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
+          />
           <LayoutRoute
             exact
             path="/dashboard"
@@ -61,42 +68,49 @@ const App = () => {
             path="/properties"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/rateboard"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/connections"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/reservations"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/analythics"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/financials"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact
             path="/website"
             component={CommingSoonPage}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute component={NotFoundPage} />
         </Switch>
