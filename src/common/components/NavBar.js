@@ -16,7 +16,7 @@ const StyledContainer = styled(Container)`
   box-shadow: 0px 4px 4px rgba(42, 44, 55, 0.06);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 `;
 
 const StyledMenuHeaderLogo = styled(MenuHeaderLogo)`
