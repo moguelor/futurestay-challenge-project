@@ -8,14 +8,14 @@ const StyledDiv = styled.div`
   margin-top: 15px;
   padding: 15px;
   height: 293px;
-  background-color: ${({theme}) => theme.colors.card};
+  background-color: ${({ theme }) => theme.colors.card};
   box-shadow: 0px 0px 10px rgba(145, 151, 204, 0.3);
   border-radius: 20px;
 `;
 
 const Title = styled.div`
   font-size: 16px;
-  color: ${({theme}) => theme.colors.text} ;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 600;
   margin-bottom: 15px;
 `;
@@ -44,7 +44,7 @@ const StyledTransparent = styled.div`
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) -146.09%,
-    ${({theme}) => theme.colors.card} 100%
+    ${({ theme }) => theme.colors.card} 100%
   );
   border-radius: 0px 0px 20px 20px;
   width: 100%;

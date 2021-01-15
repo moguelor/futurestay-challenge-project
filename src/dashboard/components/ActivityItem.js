@@ -11,7 +11,7 @@ const Title = styled.div`
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 8px;
-  color: ${({theme}) => theme.colors.text };
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 const InfoCompany = styled.div`
@@ -22,7 +22,7 @@ const InfoCompany = styled.div`
   ${({ type, theme }) =>
     type === "payment" &&
     `
-      color: ${ theme.colors.textMark };
+      color: ${theme.colors.textMark};
 `}
 `;
 
@@ -34,7 +34,7 @@ const Description = styled.div`
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  color: ${({theme}) => theme.colors.text };
+  color: ${({ theme }) => theme.colors.text};
 
   ${({ type, theme }) =>
     type === "payment" &&
@@ -42,14 +42,14 @@ const Description = styled.div`
     color: ${theme.colors.textMark} ;
   `}
 
-   @min(width: 573px){
+  @min(width: 573px) {
     overflow: auto;
-   }
+  }
 `;
 
 const Date = styled.div`
   font-size: 12px;
-  color: ${({theme}) => theme.colors.textMark };
+  color: ${({ theme }) => theme.colors.textMark};
   text-align: right;
 `;
 

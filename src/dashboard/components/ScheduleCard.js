@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ScheduleRow from "./ScheduleRow";
 
 const StyledDiv = styled.div`
-  background-color: ${({theme}) => theme.colors.card};
+  background-color: ${({ theme }) => theme.colors.card};
   width: 100%;
   box-shadow: 0px 0px 10px rgba(145, 151, 204, 0.3);
   border-radius: 20px;
@@ -21,13 +21,13 @@ const Stadistics = styled.div`
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
-  color:  ${({theme}) => theme.colors.textMenu };
+  color: ${({ theme }) => theme.colors.textMenu};
 `;
 
 const Tag = styled.div`
   font-size: 10px;
   background-color: #4852aa;
-  color:  #fff;
+  color: #fff;
   border-radius: 13px;
   text-align: center;
   padding: 5px;
@@ -35,13 +35,13 @@ const Tag = styled.div`
 `;
 
 const Month = styled.span`
-  color: ${({theme}) => theme.colors.textMenu };
+  color: ${({ theme }) => theme.colors.textMenu};
   font-size: 14px;
   font-weight: 400;
 `;
 
 const Day = styled.span`
-  color: ${({theme}) => theme.colors.text };
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 600;
   font-size: 14px;
 `;
@@ -77,11 +77,9 @@ const ScheduleCard = ({ hideStadistics, withoutBorderColor, data }) => {
       </Row>
       <Row>
         <Col>
-          {
-              data.map((item, index) => {
-                return <ScheduleRow key={index} {...item} />
-              })
-          }
+          {data.map((item, index) => {
+            return <ScheduleRow key={index} {...item} />;
+          })}
         </Col>
       </Row>
     </StyledDiv>

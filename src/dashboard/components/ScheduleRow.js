@@ -19,17 +19,17 @@ const StyledDiv = styled.div`
 
 const Label = styled.div`
   font-size: 12px;
-  color: ${({theme}) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 600;
 
   svg > path {
-    fill: ${({theme}) => theme.colors.text};
+    fill: ${({ theme }) => theme.colors.text};
   }
 `;
 
 const LabelGrey = styled.div`
   font-size: 12px;
-  color: ${({theme}) => theme.colors.colorTextCompany};
+  color: ${({ theme }) => theme.colors.colorTextCompany};
   font-weight: 400;
 `;
 
@@ -84,22 +84,23 @@ const ScheduleRow = ({ company, user, type, client, channel }) => {
   return (
     <StyledDiv>
       <Row className="align-items-center">
-        <Col xs="1" style={{height: "100%"}}>
+        <Col xs="1" style={{ height: "100%" }}>
           <BarColor color={color} />
         </Col>
         <Col xs="5">
           <Label>
             {Icon && <Icon />} {label}{" "}
           </Label>
-          {company && <LabelGrey> {ChannelLogo && <ChannelLogo />} {company}</LabelGrey>}
+          {company && (
+            <LabelGrey>
+              {" "}
+              {ChannelLogo && <ChannelLogo />} {company}
+            </LabelGrey>
+          )}
         </Col>
         <Col xs="5">
           <Label> {client} </Label>
-          {user && (
-            <LabelGrey>
-               {user}
-            </LabelGrey>
-          )}
+          {user && <LabelGrey>{user}</LabelGrey>}
         </Col>
       </Row>
     </StyledDiv>

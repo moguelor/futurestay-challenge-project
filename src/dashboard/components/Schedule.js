@@ -2,11 +2,10 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 import ScheduleCard from "./ScheduleCard";
-import { ReactComponent as ChevDown } from "@assets/icons/chev-down.svg";
 import { CustomDropdown } from "@components/bootstrap";
 
 const StyledRow = styled(Row)`
-  background-color: ${({theme}) => theme.colors.backgroundLongCard};
+  background-color: ${({ theme }) => theme.colors.backgroundLongCard};
   margin-top: 15px;
   padding: 30px 0px;
 
@@ -16,7 +15,7 @@ const StyledRow = styled(Row)`
 `;
 
 const Title = styled.div`
-  color: ${({theme}) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 11px;

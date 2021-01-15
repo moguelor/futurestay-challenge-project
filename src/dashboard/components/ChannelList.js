@@ -76,7 +76,7 @@ const ChannelList = () => {
     <Wrapper>
       <Row>
         {channels.map(({ logo: Logo, name, checked }, index) => (
-          <Col key={index} xs={6}  lg>
+          <Col key={index} xs={6} lg>
             <Row className="justify-content-center">
               <Col xs={9} lg={12}>
                 <ContainerLogo checked={checked}>
@@ -88,10 +88,13 @@ const ChannelList = () => {
                   <CheckmarkIcon className="icon-check" />
                 ) : (
                   [
-                    <TransparentButton key={Math.random()} className="icon-plus d-lg-none">
-                      <PlusCircleIcon  />
+                    <TransparentButton
+                      key={Math.random()}
+                      className="icon-plus d-lg-none"
+                    >
+                      <PlusCircleIcon />
                     </TransparentButton>,
-                    <Button 
+                    <Button
                       key={Math.random()}
                       className="d-none d-lg-flex"
                       type="tiny"

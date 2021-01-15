@@ -19,9 +19,7 @@ const StyledButton = styled.button`
     margin-right: 6px;
 
     & > path {
-
     }
-
   }
 
   ${({ type }) =>
@@ -70,12 +68,11 @@ const StyledButton = styled.button`
 
   ${({ center }) => center && "margin: 0 auto;"}
 
-  @media(min-width: 576px){
+  @media(min-width: 576px) {
     overflow: auto;
     white-space: wrap;
     text-overflow: auto;
   }
-
 `;
 
 const Button = ({
@@ -95,7 +92,8 @@ const Button = ({
       className={className}
       center={center}
     >
-      {Icon && <Icon color={"red"} fill={"red"} /> }{text}
+      {Icon && <Icon color={"red"} fill={"red"} />}
+      {text}
     </StyledButton>
   );
 };

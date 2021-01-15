@@ -8,6 +8,7 @@ import { AdminLayout } from "@components/layouts";
 /** Pages */
 import * as dashboard from "./dashboard";
 
+/** Theme */
 const themes = {
   default: {
     colors: {
@@ -17,26 +18,26 @@ const themes = {
       text: "#2a2c37",
       textMenu: "#55586F",
       textMenuActive: "#4852aa",
+      textMark: "#9A9BA9",
+      colorTextCompany: "#79798c",
       backgroundMenuActive: "#edeef7",
       backgroundToggle: "#4852AA",
-      textMark: "#9A9BA9",
       backgroundLongCard: "#edeef7",
-      colorTextCompany: "#79798c"
     },
   },
   dark: {
     colors: {
-      background: "#55586F",
-      card: "#79798C",
-      surface: "#2A2C37",
+      background: "#55586f",
+      card: "#79798c",
+      surface: "#2a2c37",
       text: "#fff",
       textMenu: "#fff",
+      textMark: "#fff",
+      colorTextCompany: "#ff",
       textMenuActive: "#4852aa",
-      backgroundMenuActive: "#9A9BA9",
-      backgroundToggle: "#4852AA",
-      textMark: "#FFF",
-      backgroundLongCard: "#BCBCC5",
-      colorTextCompany: "#FFF"
+      backgroundMenuActive: "#9a9ba9",
+      backgroundToggle: "#4852aa",
+      backgroundLongCard: "#bcbcc5",
     },
   },
 };

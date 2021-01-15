@@ -20,7 +20,7 @@ const Dashboard = () => {
         <Col lg="8">
           <Row>
             <Col>
-              <Row lg="12" style={{marginBottom: 15}}>
+              <Row lg="12" style={{ marginBottom: 15 }}>
                 <Col>
                   <Title text="Smart Connections™" icon={DoneMarkLogo} />
                 </Col>
@@ -83,7 +83,7 @@ const Dashboard = () => {
           </Row>
         </Col>
         <Col lg="4">
-          <Row style={{marginTop: 15}}>
+          <Row style={{ marginTop: 15 }}>
             <Col xs="6" lg="6" className="d-none d-sm-block">
               <Button
                 type="outline"

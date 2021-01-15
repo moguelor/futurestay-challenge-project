@@ -23,7 +23,7 @@ const ItemPage = styled.div`
 `}
 `;
 
-const Paginator = ({className}) => {
+const Paginator = ({ className }) => {
   const itemPages = [
     { active: true, label: "1" },
     { active: false, label: "2" },
@@ -34,13 +34,15 @@ const Paginator = ({className}) => {
 
   return (
     <Row className={`${className} justify-content-between align-items-center`}>
-      <Col className="d-flex align-items-center" >
+      <Col className="d-flex align-items-center">
         <LeftCircle />
       </Col>
       <Col className="no-padding" xs={6}>
         <Row className="justify-content-center">
           {itemPages.map(({ active, label }, index) => (
-              <ItemPage key={index} active={active}>{label}</ItemPage>
+            <ItemPage key={index} active={active}>
+              {label}
+            </ItemPage>
           ))}
         </Row>
       </Col>
