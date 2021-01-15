@@ -62,18 +62,22 @@ const Subtitle = styled.div`
   white-space: nowrap;
 `;
 
+const StyledCol = styled(Col)`
+  z-index: 1;
+`;
+
 const WelcomeCard = ({ title }) => {
   return (
     <StyledDiv>
       <Row>
-        <Col sm={6}>
+        <StyledCol sm={6}>
           <Title>{title}</Title>
           <Subtitle>
             You've reached your booking goal this <br /> month! Time to
             celebrate!
           </Subtitle>
           <Button text={"Check business performance"} />
-        </Col>
+        </StyledCol>
       </Row>
       <ImageBackground />
     </StyledDiv>
