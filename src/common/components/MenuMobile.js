@@ -14,7 +14,7 @@ const StyledSection = styled.section`
   background-color: ${({ theme }) => theme.colors.surface};
   width: 250px;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15);
   padding: 10px 0px;
 `;
@@ -25,7 +25,7 @@ const Overlay = styled.section`
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(3px);
   transition: backdrop-filter 0.5s;
 
