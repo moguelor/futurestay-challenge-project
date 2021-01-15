@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 import Button from "./Button";
+import { TransparentButton } from "@components";
 import { ReactComponent as BookingLogo } from "@assets/channelLogos/bookingcom.svg";
 import { ReactComponent as AirbnbLogo } from "@assets/channelLogos/airbnb.svg";
 import { ReactComponent as GoogleLogo } from "@assets/channelLogos/google.svg";
@@ -28,7 +29,7 @@ const Wrapper = styled.div`
 const Label = styled.label`
   font-size: 12px;
   font-weight: 600;
-  color: ${({theme}) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 const ContainerLogo = styled.div`
@@ -87,8 +88,11 @@ const ChannelList = () => {
                   <CheckmarkIcon className="icon-check" />
                 ) : (
                   [
-                    <PlusCircleIcon className="icon-plus d-lg-none" />,
-                    <Button
+                    <TransparentButton key={Math.random()} className="icon-plus d-lg-none">
+                      <PlusCircleIcon  />
+                    </TransparentButton>,
+                    <Button 
+                      key={Math.random()}
                       className="d-none d-lg-flex"
                       type="tiny"
                       text="Connect"

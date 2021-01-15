@@ -41,7 +41,7 @@ const Label = styled.span`
 const MenuItem = ({ icon: Icon, text, path, isActive }) => {
   return (
     <StyledLI>
-      <StyledLink to={path} isActive={isActive}>
+      <StyledLink to={path} $isActive={isActive}>
         <Icon /> <Label>{text}</Label>
       </StyledLink>
     </StyledLI>

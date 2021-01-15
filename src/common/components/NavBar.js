@@ -42,7 +42,9 @@ const NavBar = ({handleClickOpen}) => {
           <Menu />
         </Col>
         <Col className="d-none d-xl-flex align-items-center justify-content-end">
-          <NotificationIcon />
+          <TransparentButton>
+            <NotificationIcon />
+          </TransparentButton>
         </Col>
         <Col xs={1}  className="d-none d-xl-flex align-items-center justify-content-end">
           <DropdownUser />

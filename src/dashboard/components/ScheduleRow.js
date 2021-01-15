@@ -21,6 +21,10 @@ const Label = styled.div`
   font-size: 12px;
   color: ${({theme}) => theme.colors.text};
   font-weight: 600;
+
+  svg > path {
+    fill: ${({theme}) => theme.colors.text};
+  }
 `;
 
 const LabelGrey = styled.div`

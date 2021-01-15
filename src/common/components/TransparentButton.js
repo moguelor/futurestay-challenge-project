@@ -9,6 +9,10 @@ const TransparentButton = styled.button`
     &:focus, &:active{
         outline: 0;
     } 
+
+    svg > path {
+        fill: ${({theme}) => theme.colors.text};
+    }
 `;
 
 export default TransparentButton;

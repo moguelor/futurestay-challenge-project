@@ -44,7 +44,7 @@ const StyledTransparent = styled.div`
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) -146.09%,
-    #${({theme}) => theme.colors.card} 100%
+    ${({theme}) => theme.colors.card} 100%
   );
   border-radius: 0px 0px 20px 20px;
   width: 100%;

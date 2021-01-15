@@ -19,10 +19,10 @@ const InfoCompany = styled.div`
   font-weight: 400;
   line-height: 15px;
   margin-bottom: 8px;
-  ${({ type }) =>
+  ${({ type, theme }) =>
     type === "payment" &&
     `
-      color: ${({theme}) => theme.colors.textMark } ;
+      color: ${ theme.colors.textMark };
 `}
 `;
 
@@ -36,10 +36,10 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   color: ${({theme}) => theme.colors.text };
 
-  ${({ type }) =>
+  ${({ type, theme }) =>
     type === "payment" &&
     `
-    color: ${({theme}) => theme.colors.textMark } ;
+    color: ${theme.colors.textMark} ;
   `}
 
    @min(width: 573px){

@@ -44,8 +44,8 @@ const MenuMobile = ({ isOpen, handleClickClose }) => {
               <LogoFull />
             </Col>
             <Col className="text-right">
-              <TransparentButton>
-                <LeftCircle onClick={handleClickClose} />
+              <TransparentButton onClick={handleClickClose}>
+                <small>Close</small>
               </TransparentButton>
             </Col>
           </Row>

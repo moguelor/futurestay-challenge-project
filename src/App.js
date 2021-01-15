@@ -18,7 +18,7 @@ const themes = {
       textMenu: "#55586F",
       textMenuActive: "#4852aa",
       backgroundMenuActive: "#edeef7",
-      backgroundToggle: "#55586F",
+      backgroundToggle: "#4852AA",
       textMark: "#9A9BA9",
       backgroundLongCard: "#edeef7"
 
@@ -33,7 +33,7 @@ const themes = {
       textMenu: "#fff",
       textMenuActive: "#4852aa",
       backgroundMenuActive: "#9A9BA9",
-      backgroundToggle: "#fafafa",
+      backgroundToggle: "#4852AA",
       textMark: "#FFF",
       backgroundLongCard: "#BCBCC5"
     },
