@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Alleyn", sans-serif;
         background-color:  ${({ theme }) => theme.colors.background};
         margin: 0px;
+        transition: all 0.15s linear;
     }
 
     #root {

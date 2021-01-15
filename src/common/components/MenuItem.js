@@ -28,6 +28,10 @@ const StyledLink = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.textMenuActive};
   }
+
+  & > svg > path {
+    fill: ${({ theme }) => theme.colors.textMenu}
+  }
 `;
 
 const Label = styled.span`
@@ -35,7 +39,6 @@ const Label = styled.span`
 `;
 
 const MenuItem = ({ icon: Icon, text, path, isActive }) => {
-  console.log(isActive);
   return (
     <StyledLI>
       <StyledLink to={path} isActive={isActive}>

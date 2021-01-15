@@ -4,6 +4,7 @@ const TransparentButton = styled.button`
     border: none;
     background-color: transparent;
     color: none;
+    padding:0px;
 
     &:focus, &:active{
         outline: 0;

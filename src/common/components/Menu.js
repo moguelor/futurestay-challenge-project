@@ -16,6 +16,7 @@ const StyledUL = styled.ul`
   display: flex;
   list-style: none;
   margin: 0px;
+  padding: 0px;
 
   ${({variant}) => variant === 'mobile' && `
     flex-direction: column;

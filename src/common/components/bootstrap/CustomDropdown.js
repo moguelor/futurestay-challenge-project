@@ -35,12 +35,12 @@ const CustomDropdown = ({ text, variant = "default", items }) => {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          {items.map(({ type, path, text }) => {
+          {items.map(({ type, path, text }, index) => {
             switch (type) {
               case "item":
-                return <Dropdown.Item href={path}>{text}</Dropdown.Item>;
+                return <Dropdown.Item key={index} href={path}>{text}</Dropdown.Item>;
               default:
-                return <Dropdown.Divider />;
+                return <Dropdown.Divider key={index}/>;
             }
           })}
         </Dropdown.Menu>

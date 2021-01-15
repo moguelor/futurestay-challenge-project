@@ -11,23 +11,37 @@ import * as dashboard from "./dashboard";
 const themes = {
   default: {
     colors: {
-      background: "#FAFAFA",
-      surface: "#FFF",
-      text: "#2A2C37",
+      background: "#fafafa",
+      card: "#FFF",
+      surface: "#fff",
+      text: "#2a2c37",
       textMenu: "#55586F",
       textMenuActive: "#4852aa",
       backgroundMenuActive: "#edeef7",
+      backgroundToggle: "#55586F",
+      textMark: "#9A9BA9",
+      backgroundLongCard: "#edeef7"
 
     },
   },
   dark: {
     colors: {
-      background: "",
+      background: "#55586F",
+      card: "#79798C",
+      surface: "#2A2C37",
+      text: "#fff",
+      textMenu: "#fff",
+      textMenuActive: "#4852aa",
+      backgroundMenuActive: "#9A9BA9",
+      backgroundToggle: "#fafafa",
+      textMark: "#FFF",
+      backgroundLongCard: "#BCBCC5"
     },
   },
 };
 
 const App = () => {
+
   const [theme, toggleTheme] = useThemeMode();
 
   return (
@@ -40,6 +54,7 @@ const App = () => {
             path="/dashboard"
             component={dashboard.Container}
             layout={AdminLayout}
+            handleToggleTheme={toggleTheme}
           />
           <LayoutRoute
             exact

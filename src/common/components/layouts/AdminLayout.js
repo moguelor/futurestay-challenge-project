@@ -1,17 +1,25 @@
 import React, { useState } from "react";
-import { NavBar, MenuMobile } from "@components";
+import { NavBar, MenuMobile, ToggleTheme } from "@components";
+import styled from "styled-components";
 
-const AdminLayout = ({ children }) => {
+const WrapperContent = styled.section`
+  padding-top: 65px;
+
+  @media (min-width: 576px) {
+    padding-top: 80px;
+  }
+`;
+
+const AdminLayout = ({ children, handleToggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <NavBar handleClickOpen={() => setIsOpen(true)} />
-      <section>
-        <MenuMobile isOpen={isOpen}  handleClickClose={() => setIsOpen(false)} />
-        <section>{children}</section>
-      </section>
-    </div>
+      <MenuMobile isOpen={isOpen} handleClickClose={() => setIsOpen(false)} />
+      <WrapperContent>{children}</WrapperContent>
+      <ToggleTheme handleToggleTheme={handleToggleTheme} />
+    </>
   );
 };
 

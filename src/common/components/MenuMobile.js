@@ -34,6 +34,7 @@ const Overlay = styled.section`
 `;
 
 const MenuMobile = ({ isOpen, handleClickClose }) => {
+
   return (
     <div>
       <StyledSection isOpen={isOpen}>
