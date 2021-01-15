@@ -33,6 +33,12 @@ const Overlay = styled.section`
     isOpen || "backdrop-filter: blur(3px) opacity(0); display: none;"}
 `;
 
+const Button = styled.button`
+  background: transparent;
+  border: 0px;
+  color: ${({ theme }) => theme.colors.text};
+`;
+
 const MenuMobile = ({ isOpen, handleClickClose }) => {
 
   return (
@@ -44,9 +50,9 @@ const MenuMobile = ({ isOpen, handleClickClose }) => {
               <LogoFull />
             </Col>
             <Col className="text-right">
-              <TransparentButton onClick={handleClickClose}>
-                <small>Close</small>
-              </TransparentButton>
+              <Button onClick={handleClickClose}>
+                <LeftCircle />
+              </Button>
             </Col>
           </Row>
           <Row>
