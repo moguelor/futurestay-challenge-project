@@ -13,7 +13,7 @@ const StyledSection = styled.section`
   position: fixed;
   background-color: ${({ theme }) => theme.colors.surface};
   width: 250px;
-  height: 100vh;
+  height: 100%;
   z-index: 3;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15);
   padding: 10px 0px;
