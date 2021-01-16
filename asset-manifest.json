@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/futurestay-challenge-project/static/css/main.77c72f33.chunk.css",
-    "main.js": "/futurestay-challenge-project/static/js/main.bdb982d8.chunk.js",
-    "main.js.map": "/futurestay-challenge-project/static/js/main.bdb982d8.chunk.js.map",
+    "main.js": "/futurestay-challenge-project/static/js/main.65394f60.chunk.js",
+    "main.js.map": "/futurestay-challenge-project/static/js/main.65394f60.chunk.js.map",
     "runtime-main.js": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js",
     "runtime-main.js.map": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js.map",
     "static/css/2.1a02f21c.chunk.css": "/futurestay-challenge-project/static/css/2.1a02f21c.chunk.css",
@@ -48,6 +48,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.2f0ba063.chunk.js",
     "static/css/main.77c72f33.chunk.css",
-    "static/js/main.bdb982d8.chunk.js"
+    "static/js/main.65394f60.chunk.js"
   ]
 }
