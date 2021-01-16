@@ -9,8 +9,8 @@ import { ReactComponent as Vrbo } from "@assets/channelLogos/vrbo.svg";
 const BarColor = styled.div`
   border-radius: 10px;
   width: 4px;
-  min-height: 35px;
   background-color: ${({ color }) => color};
+  height: 100%;
 `;
 
 const StyledDiv = styled.div`
@@ -29,7 +29,7 @@ const Label = styled.div`
     fill: ${({ theme }) => theme.colors.text};
   }
 
-  @media(min-width: 576px) {
+  @media (min-width: 576px) {
     white-space: initial;
     text-overflow: auto;
     overflow: auto;
@@ -41,9 +41,12 @@ const LabelGrey = styled.div`
   color: ${({ theme }) => theme.colors.colorTextCompany};
   font-weight: 400;
   white-space: nowrap;
+`;
 
-
-
+const TestBar = styled.div`
+  width: 5px;
+  height: 100%;
+  background-color: red;
 `;
 
 const getIconByType = (type) => {
@@ -96,11 +99,11 @@ const ScheduleRow = ({ company, user, type, client, channel }) => {
 
   return (
     <StyledDiv>
-      <Row className="align-items-center">
-        <Col xs="1" style={{ height: "100%" }}>
+      <Row>
+        <Col xs="1">
           <BarColor color={color} />
         </Col>
-        <Col xs="5">
+        <Col className="align-self-center" xs="5">
           <Label>
             {Icon && <Icon />} {label}{" "}
           </Label>
@@ -111,7 +114,7 @@ const ScheduleRow = ({ company, user, type, client, channel }) => {
             </LabelGrey>
           )}
         </Col>
-        <Col xs="5">
+        <Col className="align-self-center" xs="5">
           <Label> {client} </Label>
           {user && <LabelGrey>{user}</LabelGrey>}
         </Col>
