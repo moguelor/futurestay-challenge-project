@@ -54,6 +54,7 @@ Here are the main libraries used in the project.
 
 * [styled-components](https://styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress.
 * [react-bootstrap](https://react-bootstrap.netlify.app/) - The most popular front-end framework Rebuilt for React.
+* [react-placeholder](https://github.com/buildo/react-placeholder) - Nice placeholders while the content is loading.
 
 ### Routing
 
@@ -69,7 +70,7 @@ Here are the main libraries used in the project.
 
 ### Required feature.
 
-*  Implement a `desktop` view responsive.
+*  Implement a `desktop` view.
 
 ### Extra features
 
