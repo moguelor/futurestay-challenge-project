@@ -24,6 +24,7 @@ const themes = {
       backgroundMenuActive: "#edeef7",
       backgroundToggle: "#55586F",
       backgroundLongCard: "#edeef7",
+      placeholder: "#DDDEE2"
     },
   },
   dark: {
@@ -40,6 +41,7 @@ const themes = {
       backgroundMenuActive: "#9a9ba9",
       backgroundToggle: "#dddee2",
       backgroundLongCard: "#bcbcc5",
+      placeholder: "#DDDEE2"
     },
   },
 };

@@ -26,7 +26,7 @@ const StyledButton = styled.button`
 const ToggleTheme = ({ handleToggleTheme }) => {
   return (
     <StyledButton onClick={handleToggleTheme}>
-      <ThemeLightDark />{" "}
+      <ThemeLightDark />
     </StyledButton>
   );
 };
