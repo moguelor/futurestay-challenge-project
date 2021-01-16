@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/futurestay-challenge-project/static/css/main.77c72f33.chunk.css",
-    "main.js": "/futurestay-challenge-project/static/js/main.02bc9fa6.chunk.js",
-    "main.js.map": "/futurestay-challenge-project/static/js/main.02bc9fa6.chunk.js.map",
+    "main.js": "/futurestay-challenge-project/static/js/main.f8e87111.chunk.js",
+    "main.js.map": "/futurestay-challenge-project/static/js/main.f8e87111.chunk.js.map",
     "runtime-main.js": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js",
     "runtime-main.js.map": "/futurestay-challenge-project/static/js/runtime-main.26a04a8b.js.map",
-    "static/css/2.1a02f21c.chunk.css": "/futurestay-challenge-project/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.2f0ba063.chunk.js": "/futurestay-challenge-project/static/js/2.2f0ba063.chunk.js",
-    "static/js/2.2f0ba063.chunk.js.map": "/futurestay-challenge-project/static/js/2.2f0ba063.chunk.js.map",
+    "static/css/2.12578ddb.chunk.css": "/futurestay-challenge-project/static/css/2.12578ddb.chunk.css",
+    "static/js/2.8069bf5e.chunk.js": "/futurestay-challenge-project/static/js/2.8069bf5e.chunk.js",
+    "static/js/2.8069bf5e.chunk.js.map": "/futurestay-challenge-project/static/js/2.8069bf5e.chunk.js.map",
     "index.html": "/futurestay-challenge-project/index.html",
-    "static/css/2.1a02f21c.chunk.css.map": "/futurestay-challenge-project/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/2.12578ddb.chunk.css.map": "/futurestay-challenge-project/static/css/2.12578ddb.chunk.css.map",
     "static/css/main.77c72f33.chunk.css.map": "/futurestay-challenge-project/static/css/main.77c72f33.chunk.css.map",
-    "static/js/2.2f0ba063.chunk.js.LICENSE.txt": "/futurestay-challenge-project/static/js/2.2f0ba063.chunk.js.LICENSE.txt",
+    "static/js/2.8069bf5e.chunk.js.LICENSE.txt": "/futurestay-challenge-project/static/js/2.8069bf5e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/futurestay-challenge-project/static/media/Alleyn-Semibold.e58690f7.otf",
     "static/media/airbnb.0a758608.svg": "/futurestay-challenge-project/static/media/airbnb.0a758608.svg",
     "static/media/analythics.4f98d774.svg": "/futurestay-challenge-project/static/media/analythics.4f98d774.svg",
@@ -45,9 +45,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.26a04a8b.js",
-    "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.2f0ba063.chunk.js",
+    "static/css/2.12578ddb.chunk.css",
+    "static/js/2.8069bf5e.chunk.js",
     "static/css/main.77c72f33.chunk.css",
-    "static/js/main.02bc9fa6.chunk.js"
+    "static/js/main.f8e87111.chunk.js"
   ]
 }
