@@ -4,9 +4,11 @@ import styled from "styled-components";
 
 const WrapperContent = styled.section`
   padding-top: 65px;
+  padding-bottom: 0px;
 
   @media (min-width: 576px) {
     padding-top: 80px;
+    padding-bottom: 25px;
   }
 `;
 
