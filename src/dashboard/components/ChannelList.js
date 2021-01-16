@@ -22,7 +22,6 @@ const Wrapper = styled.div`
   .icon-check,
   .icon-plus {
     width: 16px;
-    height: 16px;
   }
 `;
 
