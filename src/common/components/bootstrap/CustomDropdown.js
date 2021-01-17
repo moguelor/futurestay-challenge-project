@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Dropdown } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 const StyledDropdown = styled(Dropdown)`
   button {
@@ -38,7 +39,7 @@ const CustomDropdown = ({ text, variant = "default", items }) => {
           {items.map(({ type, path, text }, index) => {
             switch (type) {
               case "item":
-                return <Dropdown.Item key={index} href={path}>{text}</Dropdown.Item>;
+                return <Dropdown.Item as={Link} key={index} to={path}>{text}</Dropdown.Item>;
               default:
                 return <Dropdown.Divider key={index}/>;
             }
