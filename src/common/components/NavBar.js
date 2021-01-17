@@ -24,31 +24,33 @@ const StyledMenuHeaderLogo = styled(MenuHeaderLogo)`
   position: absolute;
 `;
 
-const NavBar = ({handleClickOpen}) => {
+const NavBar = ({ handleClickOpen }) => {
   return (
-    <StyledContainer fluid >
+    <StyledContainer fluid>
       <Row className="align-items-center justify-content-between h-100">
         <Col xs={6} className="d-block d-xl-none">
           <TransparentButton onClick={handleClickOpen}>
-          <BurgerIcon  />
+            <BurgerIcon />
           </TransparentButton>
         </Col>
         <Col xs={1} className="d-none d-xl-flex no-padding-left">
           <StyledMenuHeaderLogo />
         </Col>
-        
-        
+
         <Col className="d-none d-xl-flex">
           <Menu />
         </Col>
-        <Col className="d-none d-xl-flex align-items-center justify-content-end">
-          <TransparentButton>
+
+        <Col
+          xs={2}
+          className="d-none d-xl-flex align-items-center justify-content-end"
+        >
+          <TransparentButton style={{ marginRight: "15px" }}>
             <NotificationIcon />
           </TransparentButton>
-        </Col>
-        <Col xs={1}  className="d-none d-xl-flex align-items-center justify-content-end">
           <DropdownUser />
         </Col>
+
         <Col xs={6} className="d-block d-xl-none text-right">
           <DoneMarkLogo />
         </Col>
